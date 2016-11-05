@@ -1,0 +1,22 @@
+{
+  "name": "rbuilder",
+  "version": "1.0.0",
+  "description": "rbuilder",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projects05/rbuilder.git"
+  },
+  "keywords": [
+    "rbuilder"
+  ],
+  "author": "Aman Kumar Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/projects05/rbuilder/issues"
+  },
+  "homepage": "https://github.com/projects05/rbuilder#readme"
+}
