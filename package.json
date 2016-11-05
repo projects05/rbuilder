@@ -4,7 +4,8 @@
   "description": "rbuilder",
   "main": "server.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/projects05/rbuilder/issues"
   },
-  "homepage": "https://github.com/projects05/rbuilder#readme"
+  "homepage": "https://github.com/projects05/rbuilder#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "morgan": "^1.7.0"
+  }
 }
