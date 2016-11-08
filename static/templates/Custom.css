@@ -1,21 +1,30 @@
-/*--------- NAVIGATION CSS --------- */
 
-.navbar-inverse {
-    background: #2a2f37;
-    border: 1px solid #14161a;
+body{
+    overflow-x: hidden;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #ff5874;
+    border-color: #ff5874;
     border-radius: 0;
 }
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    color: #fff;
-    background-color: #1f2329;
+.nav>li>a {
+    text-align: right;
+    color: #555;
 }
-.navbar-right{
-	padding-left: 15px;
+
+.nav-stacked>li {
+    border-bottom: 1px dotted #ccc;
+}
+
+.bg-white{
+    background: #fcf8e3;
 }
 /*--------- LOGIN CSS --------- */
 
 .login-div{
-    max-width: 350px;
+    max-width: 360px;
     /*min-height: 400px;*/
 }
 .box{
@@ -24,5 +33,47 @@
 	border-radius: 1px;
 	padding: 30px;
 	margin: 20px 0;
+}
+#login {
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    padding: 100px 0;
+    position: relative;
+}
+.transparent {
+    position: absolute;
+    background-image: url(images/transparent2.png);
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+/*--------- DASHBOARD CSS --------- */
+
+#rb-header .container{
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    bottom: 25px;
+    width: 270px;
+    z-index: 888;
+    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+
+}
+#content section{
+    padding-left: 320px;
+}
+#section1 {
+    background: url(images/img3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center center;
 }
 
