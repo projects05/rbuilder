@@ -1,79 +1,314 @@
-
-body{
+body
+{
     overflow-x: hidden;
 }
-
-.btn-primary {
-    color: #fff;
-    background-color: #ff5874;
-    border-color: #ff5874;
-    border-radius: 0;
+.material-icons{
+    font-size: 18px;
 }
-.nav>li>a {
+
+.navbar-custom{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-primary
+{
+    color: #fff;
+    border-color: #6ed0f6;
+    border-radius: 0;
+    background-color: #6ed0f6;
+}
+.btn-primary:hover{
+    color: #fff;
+    background-color: #5CC1E8;
+    border-color: #5CC1E8;
+}
+/*.nav > li > a
+{
     text-align: right;
     color: #555;
+}*/
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
 }
 
-.nav-stacked>li {
+.nav-stacked > li
+{
     border-bottom: 1px dotted #ccc;
 }
 
-.bg-white{
-    background: #fcf8e3;
-}
-/*--------- LOGIN CSS --------- */
+/*---------------------------
+    LOGIN CSS
+-------------------------- */
 
-.login-div{
+.login-div
+{
     max-width: 360px;
-    /*min-height: 400px;*/
 }
-.box{
-	background-color: #fff;
-	border: 1px solid #efefef;
-	border-radius: 1px;
-	padding: 30px;
-	margin: 20px 0;
+.box
+{
+    margin: 20px 0;
+    padding: 30px;
+    border: 1px solid #efefef;
+    border-radius: 1px;
+    background-color: #fff;
 }
-#login {
-    background-image: url(images/bg2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: scroll;
-    padding: 100px 0;
+#login
+{
     position: relative;
+    padding: 30px 0;
+    background-image: url(images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
 }
-.transparent {
+.transparent
+{
     position: absolute;
-    background-image: url(images/transparent2.png);
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/t2.png);
+    background-repeat: repeat;
 }
-/*--------- DASHBOARD CSS --------- */
+.login-form input.form-control{
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+.login-form .form-group{
+    margin-bottom: 35px;
+}
+.login-form button
+{
+    font-weight: bold;
+    display: block;
+    margin: 55px auto 0;
+    padding: 15px 35px;
+    cursor: pointer;
+    /*background-color: #ff5874;*/
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, .08);
 
-#rb-header .container{
+}
+.login-form .input-group-addon{
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    color: #ff5874;
+}
+.login-form {
+    margin-top: 40px;
+}
+/*---------------------------
+    Dashboard CSS
+-------------------------- */
+
+#rb-navigation .container
+{
     position: fixed;
-    top: 25px;
-    left: 25px;
-    bottom: 25px;
-    width: 270px;
     z-index: 888;
-    -webkit-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
-    -moz-box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
-    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
-
+    top: 25px;
+    bottom: 25px;
+    left: 25px;
+    width: 270px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.31), 0 0 40px rgba(0, 0, 0, 0.07);
+       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.31), 0 0 40px rgba(0, 0, 0, 0.07);
+            /*box-shadow: 0 0 30px 0 rgba(0,0,0,.1);*/
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.31), 0 0 40px rgba(0, 0, 0, 0.07);
 }
-#content section{
+.profile-img {
+    display: block;
+    text-decoration: none;
+    font-family: Cookie, cursive;
+    width: 150px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 2.6;
+    border-radius: 50%;
+    background-color: #9d9d9d;
+    border: 1px solid #ddd;
+}
+.profile-menu {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 52px;
+}
+#content section
+{
     padding-left: 320px;
 }
-#section1 {
-    background: url(images/img3.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+#section1
+{
     height: 100vh;
+    background-repeat: no-repeat;
     background-position: center center;
+    /*background: url(images/img3.png);*/
+    background-size: cover;
+}
+/*------------- 10 DEC -------------------*/
+.logo {
+    padding: 15px 15px;
+    position: relative;
+}
+.logo::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: rgba(180, 180, 180, 0.3);
+}
+.logo a {
+    text-transform: uppercase;
+    padding: 5px 0px;
+    display: block;
+    font-size: 18px;
+    color: #3C4858;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    text-decoration: none;
 }
 
+.user {
+    padding-bottom: 20px;
+    margin: 20px auto 0;
+    position: relative;
+}
+.user::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 1px;
+    width: calc(100% - 30px);
+    background-color: rgba(180, 180, 180, 0.3);
+}
+.photo {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.42), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.user-info a {
+    margin-top: 15px;
+    text-align: center;
+    color: #3C4858;
+    padding: 6px 10px;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.rb-nav{
+    margin-top: 30px;
+    text-align: right;
+}
+
+#content {
+    /*background: url(images/t5.png);*/
+    /* position: relative; */
+    /* z-index: -5; */
+}
+
+
+
+
+/*---------------------------
+    MOBILE NAVIGATION CSS
+-------------------------- */
+
+#menu-toggle
+{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+.toggle
+{
+    margin: 10px 10px 0 0 !important;
+}
+#sidebar-wrapper
+{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    height: auto;
+    margin-right: -250px;
+    -webkit-transition: all .4s ease 0s;
+       -moz-transition: all .4s ease 0s;
+            transition: all .4s ease 0s;
+    background: #000;
+}
+#sidebar-wrapper.active
+{
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all .4s ease 0s;
+       -moz-transition: all .4s ease 0s;
+            transition: all .4s ease 0s;
+}
+.sidebar-nav
+{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #000;
+}
+.sidebar-brand
+{
+    font-size: 20px;
+    line-height: 65px !important;
+    text-transform: uppercase;
+}
+.sidebar-nav .sidebar-brand a
+{
+    color: #f63;
+}
+.sidebar-nav li
+{
+    line-height: 40px;
+    text-indent: 20px;
+}
+.sidebar-nav li a
+{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*-------  CUSTOM HAMBURGER -------*/
+
+.custom_hamburger
+{
+    position: absolute;
+    /*background-color: #fff !important;*/
+    top: 0;
+    right: 0;
+    padding: 10px 0 !important;
+}
