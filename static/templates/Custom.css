@@ -1,15 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+/*-------------------------------
+  General Layout Style
+--------------------------------*/
 body
 {
+    font-family: 'Lato', sans-serif;
     overflow-x: hidden;
 }
-.material-icons{
-    font-size: 18px;
+/*-------------------------------
+    COLORS
+-------------------------------*/
+.bg-accent{
+    background-color: #ff5874;
+}
+.bg-primary{
+    background-color: #6ed0f6;
+}
+.bg-success{
+    background-color: #68c02e;
+}
+.bg-success,.bg-primary,.bg-accent{
+    color: #fff;
 }
 
-.navbar-custom{
-    background-color: transparent;
-    border-color: transparent;
-}
+/*-------------------------------
+    BUTTONS
+-------------------------------*/
 
 .btn-primary
 {
@@ -23,11 +40,12 @@ body
     background-color: #5CC1E8;
     border-color: #5CC1E8;
 }
-/*.nav > li > a
-{
-    text-align: right;
-    color: #555;
-}*/
+
+.navbar-custom{
+    background-color: transparent;
+    border-color: transparent;
+}
+
 .nav>li>a:focus, .nav>li>a:hover {
     text-decoration: none;
     background-color: transparent;
@@ -111,7 +129,7 @@ body
     Dashboard CSS
 -------------------------- */
 
-#rb-navigation .container
+.rb-navigation
 {
     position: fixed;
     z-index: 888;
@@ -146,9 +164,11 @@ body
     text-align: center;
     margin: 0px 52px;
 }
-#content section
+.content-wrapper
 {
     padding-left: 320px;
+    min-height: 916px;
+    background: #eee;
 }
 #section1
 {
@@ -311,4 +331,45 @@ body
     top: 0;
     right: 0;
     padding: 10px 0 !important;
+}
+
+/*---------------------------
+    WIDGETS STYLE
+-------------------------- */
+
+.tile-counter {
+    display: block;
+    min-height: 90px;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.075);
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+.tile-icon{
+/*    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;*/
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0,0,0,0.2);
+}
+.tile-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+.tile-content h5 {
+    text-transform: uppercase;
+}
+.tile-content h4{
+    font-weight: bold;
+}
+.tile-icon i {
+    color: rgba(238, 238, 238, 0.64);
 }
