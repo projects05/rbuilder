@@ -6,191 +6,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+	<link href="dist/hamburgers.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
 
 
-
-	<!-- HEADER -->
-	<header id="rb-header" class="hidden-sm hidden-xs">
-		<div class="container bg-white">
-			<div class="row">
+<!-- HEADER -->
+<aside class="rb-navigation hidden-sm hidden-xs">
+	<div class="bg-white">
+		<div class="row">
+			<div class="col-md-12">
 				<!-- LOGO -->
-				<div class="col-md-12">
-					<div class="logo">
-						<img src="images/logo.png" class="img-responsive">
+				<div class="logo">
+					<a href="#" class="">LOGO</a>	
+				</div>
+				<div class="user">
+					<div class="photo">
+						<img src="images/profile.jpg" class="img-responsive">
+					</div>
+					<div class="user-info">
+						<a data-toggle="collapse" href="#collapseMenu" class="collapsed">
+	                    	Sherlocks Holmes <b class="caret"></b>
+	                	</a>
+		                <div class="collapse" id="collapseMenu">
+		                    <ul class="nav">
+		                        <li><a href="#">My Profile</a></li>
+		                        <li><a href="#">Logout</a></li>
+		                        <li><a href="#">Settings</a></li>
+		                    </ul>
+		                </div>
 					</div>
 				</div>
+				
+				
+			</div>
+			<!-- Navigation -->
+			<div class="col-md-12">
+				<nav class="rb-nav" id="">
+				   <ul class="nav nav-stacked">
+				     <li class="active"><a href="#">Section 1</a></li>
+				     <li><a href="#">Section 2</a></li>
+				     <li><a href="#">Section 3</a></li>
+				     <li><a href="#">Section 3</a></li>
+				</nav>
+			</div>
+		</div>
+	</div>
+</aside>
 
-				<!-- Navigation -->
+<!-- CONTENT -->
+
+<div class="content-wrapper">
+	<section class="content-header">
+		<div class="container">
+			<div class="row">
 				<div class="col-md-12">
-					<nav class="rb-navigation" id="myScrollspy">
-					   <ul class="nav nav-stacked">
-					     <li class="active"><a href="#section1">Section 1</a></li>
-					     <li><a href="#section2">Section 2</a></li>
-					     <li><a href="#section3">Section 3</a></li>
-					     <li><a href="#section4">Section 4</a></li>
-					     <li><a href="#section5">Section 5</a></li>
-					     <li><a href="#section6">Section 6</a></li>
-					   </ul>
-					</nav>
+					<h1>Dashboard</h1>
 				</div>
 			</div>
 		</div>
-	</header>
-
-	<!-- CONTENT -->
-
-	<div id="content" class="bg-white">
-		<section id="section1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="tile-counter bg-accent">
+						<span class="tile-icon"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+						<div class="tile-content">
+							<h5>Likes</h5>
+							<h4>21</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="tile-counter bg-success">
+						<span class="tile-icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+						<div class="tile-content">
+							<h5>Views</h5>
+							<h4>21</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="tile-counter bg-primary">
+						<span class="tile-icon"><i class="fa fa-star-o" aria-hidden="true"></i></span>
+						<div class="tile-content">
+							<h5>Rates</h5>
+							<h4>21</h4>
+						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section id="section2">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION TWO</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-<!-- 		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="start">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h1>SECTION ONE</h1>
-					</div>
-				</div>
-			</div>
-		</section> -->
-	</div>
+		</div>
+	</section>
+</div>
 
 
 
@@ -199,5 +112,26 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
+	<!-- Custom Js script -->
+	<script type="text/javascript">
+	    // Closes the sidebar menu
+	       $("#menu-close").click(function(e) {
+	           e.preventDefault();
+	           $("#sidebar-wrapper").toggleClass("active");
+	       });
+
+	       // Opens the sidebar menu
+	       $("#menu-toggle").click(function(e) {
+	           e.preventDefault();
+	           $("#sidebar-wrapper").toggleClass("active");
+	       });
+	</script>
+	<script type="text/javascript">
+	    var $hamburger = $(".hamburger");
+	     $hamburger.on("click", function(e) {
+	       $hamburger.toggleClass("is-active");
+	       // Do something else, like open/close menu
+	     });
+	</script>
 </body>
 </html>
